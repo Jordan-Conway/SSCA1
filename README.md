@@ -1,2 +1,3 @@
-# cardShop
-A college php project
+# cardShop1
+
+A college php project that is going to have a database
