@@ -19,6 +19,9 @@
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="page-3.php">Page 3</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="contact.php">Contact Us</a>
+              </li>
             </ul>
           </span>
         </div>
