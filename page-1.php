@@ -1,7 +1,7 @@
 <?php
   require_once('db.php');
 
-  $query = 'SELECT * FROM  products';
+  $query = 'SELECT * FROM `products`';
   $statement = $db->prepare($query);
   $statement->execute();
   $products = $statement->fetchAll();
