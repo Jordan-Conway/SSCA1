@@ -14,7 +14,7 @@
   </head>
   <body>
     
-  <?php include 'includes\header.php' ?>
+  <?php include 'includes/header.php' ?>
 
 <main class="container">
   <div class="starter-template text-center">
