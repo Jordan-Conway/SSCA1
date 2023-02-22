@@ -21,8 +21,8 @@ $headers .= 'From: '.$myemail."\r\n".
 $name = $_POST['name'];
 $email_address = $_POST['email'];
 $phone_number = $_POST['phone'];
-$date = $_POST['date']
-$resNum = $_POST['reservationNumber']
+$date = $_POST['date'];
+$resNum = $_POST['reservationNumber'];
 $message = $_POST['message'];
 
 if (!preg_match(
@@ -41,7 +41,7 @@ if( empty($errors))
 
         mail($to,$email_subject,$email_body,$headers);
         //redirect to the 'thank you' page
-        header('Location: thank-you.html');
+        header('Location: thank-you.php');
 }
 ?>
 <!DOCTYPE HTML>
