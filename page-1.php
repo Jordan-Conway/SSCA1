@@ -28,13 +28,31 @@
 
 <main class="container">
   <div class="starter-template text-center">
-    <h1>Page 1</h1>
-    <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+    <table class="table table-bordered table-striped">
+      <thead>
+        <th scope="col">Product Id</th>
+        <th scope="col">Product Name</th>
+        <th scope="col">Unit Price</th>
+        <th scope="col">Catagory</th>
+        <th scope="col">Number in Stock</th>
+      </thead>
+      <tbody class="table-group-divider">
+        <?php
+          foreach($products as $product){
+            echo '
+              <tr>
+                <th scope="row">'. $product['productId'] .'</td>
+                <td scope="col">'. $product['productName'] .'</td>
+                <td scope="col">'. $product['productPrice'] .'</td>
+                <td scope="col">'. $product['productCatagory'] .'</td>
+                <td scope="col">'. $product['noInStock'] .'</td>
+              </tr>   
+            ';
+          }
+        ?>
+      </tbody>
+    </table>
   </div>
-
-  <?php
-    echo $products;
-  ?>
 
 </main><!-- /.container -->
     <script src="js/bootstrap.bundle.min.js"></script>
