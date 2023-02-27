@@ -28,33 +28,35 @@ label,a
 <div class="starter-template text-center">
 	<h1>Contact us</h1>
 </div>
-<form method="POST" name="contactform" action="contact-form-handler.php" class="mb-3"> 
-<p>
-<label for='name' class="form-label">Your Name:</label> <br>
-<input type="text" name="name" class="form-control"> <br>
-</p>
-<p>
-<label for='email' class="form-label">Email Address:</label> <br>
-<input type="text" name="email" class="form-control"> <br>
-</p>
-<p>
-<label for="phone" class="form-label">Phone</label> <br>
-<input type="tel" name="phone" placeholder="1234567890" class="form-control"> <br>
-</p>
-<p>
-<label for="date" class="form-label">Date</label> <br>
-<input type="date" name="date" class="form-control"> <br>
-</p>
-<p>
-<label for="reservationNumber" class="form-label">Reservation Number</label> <br>
-<input type="number" name="reservationNumber" class="form-control"> <br>
-</p>
-<p>
-<label for='message' class="form-label">Message:</label> <br>
-<textarea name="message" class="form-control"></textarea>
-</p>
-<input type="submit" value="Submit"><br>
-</form>
+<div class="row px-3">
+	<div class="col-sm">
+		<form method="POST" name="contactform" action="contact-form-handler.php" class="mb-3"> 
+			<label for='name' class="form-label">Your Name:</label> <br>
+			<input type="text" name="name" class="form-control" id="name" onBlur="validateName()"> <br>
+			<p class="error" id="nameError"></p>
+
+			<label for='email' class="form-label">Email Address:</label> <br>
+			<input type="text" name="email" class="form-control" id="email" onBlur="validateEmail()"> <br>
+			<p class="error" id="emailError"></p>
+
+			<label for="phone" class="form-label">Phone</label> <br>
+			<input type="tel" name="phone" placeholder="1234567890" class="form-control" id="phone"> <br>
+
+			<label for="date" class="form-label">Date</label> <br>
+			<input type="date" name="date" class="form-control" id="date" onBlur="validateDate()"> <br>
+			<p class="error" id="dateError"></p>
+
+			<label for='message' class="form-label">Message:</label> <br>
+			<textarea name="message" class="form-control"></textarea>
+			<input type="submit" value="Submit"><br>
+		</form>
+	</div>
+	<div class="col-sm">
+	</div>
+</div>
 
 </body>
+
+<script src="js\validation.js"></script>
+
 </html>
