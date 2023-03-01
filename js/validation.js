@@ -6,6 +6,7 @@ let dateError = true
 let messageError = true
 
 window.onload = () =>{
+    document.getElementById("date").valueAsDate = new Date()
     disableSubmit()
 }
 
