@@ -19,6 +19,9 @@
 </div>
 <div class="row px-3">
 	<div class="col-sm">
+
+		<p>Enter your details here and we'll try to get back to you promptly</p>
+
 		<form method="POST" name="contactform" action="contact-form-handler.php" class="mb-3"> 
 			<label for='name' class="form-label">Your Name:</label> <br>
 			<input type="text" name="name" class="form-control" id="name" onBlur="validateName()"> <br>
