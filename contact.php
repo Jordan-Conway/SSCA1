@@ -36,7 +36,9 @@
 			<p class="error" id="dateError"></p>
 
 			<label for='message' class="form-label">Message:</label> <br>
-			<textarea name="message" class="form-control"></textarea>
+			<textarea name="message" id="message" class="form-control" onBlur="validateMessage()"></textarea>
+			<p class="error" id="messageError"></p>
+
 			<input type="submit" value="Submit" id="contact-form-submit"><br>
 		</form>
 	</div>

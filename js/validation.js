@@ -3,12 +3,14 @@ const emailRegex =  /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z
 let nameError = true
 let emailError = true
 let dateError = true
+let messageError = true
 
-window.onload = function validate(){
-    validateName()
-    validateEmail()
-    validateDate()
-    if(nameError || emailError || dateError){
+window.onload = () =>{
+    disableSubmit()
+}
+
+function canSubmit(){
+    if(nameError || emailError || dateError || messageError){
         disableSubmit()
     }
     else{
@@ -29,6 +31,7 @@ function validateName()
         document.getElementById("nameError").innerText = ""
         nameError = false
     }
+    canSubmit()
 }
 
 function validateEmail()
@@ -44,6 +47,7 @@ function validateEmail()
         document.getElementById("emailError").innerText = ""
         emailError = false
     }
+    canSubmit()
 }
 
 function validateDate()
@@ -69,6 +73,20 @@ function validateDate()
         document.getElementById("dateError").innerText = "Invalid date"
         dateError = true
     }
+    canSubmit()
+}
+
+function validateMessage(){
+    let message = document.getElementById("message").value
+    if(message != ""){
+        messageError = false
+        document.getElementById("messageError").innerText = ""
+    }
+    else{
+        messageError = true
+        document.getElementById("messageError").innerText = "Message cannot be empty"
+    }
+    canSubmit()
 }
 
 function disableSubmit(){
