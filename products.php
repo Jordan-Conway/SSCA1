@@ -43,7 +43,7 @@
               <tr>
                 <th scope="row">'. $product['productId'] .'</td>
                 <td scope="col">'. $product['productName'] .'</td>
-                <td scope="col">'. $product['productPrice'] .'</td>
+                <td scope="col"> €'. $product['productPrice'] .'</td>
                 <td scope="col">'. $product['productCatagory'] .'</td>
                 <td scope="col">'. $product['noInStock'] .'</td>
               </tr>   
