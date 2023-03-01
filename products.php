@@ -28,7 +28,7 @@
 
 <main class="container">
   <div class="starter-template text-center">
-    <table class="table table-bordered table-striped">
+    <table id="products-table" class="table table-bordered table-striped">
       <thead>
         <th scope="col">Product Id</th>
         <th scope="col">Product Name</th>

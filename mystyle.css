@@ -5,3 +5,9 @@
 body{
     background-color: lightcyan;
 }
+
+#products-table{
+    opacity: 80%;
+    margin-top: 1em;
+    background-color: rgb(234, 231, 231);
+}
