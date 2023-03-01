@@ -30,14 +30,15 @@ function validateDate()
 {
     let date = document.getElementById("date").value.split('-')
     let currentDate = new Date().toISOString().split('T')[0].split('-')
-    let isValid = true
-
+    let isValid = false
+    console.log("validatingDate")
+    //Loops through each part of the date and checks that it is not after the current date
     for(let i=0; i<3; i++)
     {
-        if(!isNotAfter(date[i], currentDate[i]))
-        {
-           isValid = false;
-           break;
+        if(!date[i] > currentDate[i]){
+            console.log(date[i] + " " + currentDate[i])
+            isValid = true
+            break
         }
     }
 
@@ -49,13 +50,4 @@ function validateDate()
     {
         document.getElementById("dateError").innerText = "Invalid date"
     }
-}
-
-function isNotAfter(time1, time2)
-{
-    if(time1 > time2)
-    {
-        return false
-    }
-    return true
 }
