@@ -11,3 +11,23 @@ body{
     margin-top: 1em;
     background-color: rgb(234, 231, 231);
 }
+
+.link-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.link-tab{
+    border: 2px black solid;
+    border-radius: 15px;
+    height: 250px;
+    width: 175px;
+}
+
+.link-image{
+    margin-top: 5%;
+    border-radius: 10px;
+    max-width: 90%;
+    max-height: 90%;
+    border: 2px solid black;
+}
