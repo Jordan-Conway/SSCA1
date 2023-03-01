@@ -7,17 +7,6 @@
     <link href="mystyle.css" rel="stylesheet">
 <!-- define some style elements-->
 <style>
-h1
-{
-	font-family : Arial, Helvetica, sans-serif;
-	font-size : 16px;
-    font-weight : bold;
-}
-label,a 
-{
-	font-family : Arial, Helvetica, sans-serif;
-	font-size : 12px; 
-}
 
 </style>	
 </head>	
@@ -48,7 +37,7 @@ label,a
 
 			<label for='message' class="form-label">Message:</label> <br>
 			<textarea name="message" class="form-control"></textarea>
-			<input type="submit" value="Submit"><br>
+			<input type="submit" value="Submit" id="contact-form-submit"><br>
 		</form>
 	</div>
 	<div class="col-sm">
