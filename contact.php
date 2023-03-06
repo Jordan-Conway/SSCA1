@@ -4,7 +4,7 @@
 	<title>Contact us</title>
 	<link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="mystyle.css" rel="stylesheet">
+    <link href="css/mystyle.css" rel="stylesheet">
 <!-- define some style elements-->
 <style>
 

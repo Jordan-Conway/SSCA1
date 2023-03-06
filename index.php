@@ -10,7 +10,7 @@
     <!-- Bootstrap core CSS -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="mystyle.css" rel="stylesheet">
+    <link href="css/mystyle.css" rel="stylesheet">
   </head>
   <body>
     
@@ -18,8 +18,6 @@
 
 <main class="container">
   <div class="starter-template text-center">
-    <h1>Bootstrap starter template</h1>
-    <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
     <div class="link-container">
       <div class="link-tab">
         <img class="link-image" src="images\products.jpg" alt="products"></img>
@@ -30,7 +28,7 @@
         <a href="page-2.php"></a>
       </div>
       <div class="link-tab">
-        <img class="link-image" src="images\products.jpg" alt="products"></img>
+        <img class="link-image" src="images\questionMark.jpg" alt="products"></img>
         <a href="about.php">About</a>
       </div>
     </div>

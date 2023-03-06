@@ -1,9 +1,13 @@
+$errorColor: red;
+$backgroundColor: rgb(224, 255, 255);
+$tabBackgroundColor: rgb(19, 19, 96);
+
 .error{
-    color:red;
+    color:$errorColor;
 }
 
 body{
-    background-color: lightcyan;
+    background-color: $backgroundColor;
 }
 
 #products-table{
@@ -22,6 +26,7 @@ body{
     border-radius: 15px;
     height: 250px;
     width: 175px;
+    background-color: $tabBackgroundColor;
 }
 
 .link-image{
