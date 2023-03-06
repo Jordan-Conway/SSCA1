@@ -15,6 +15,11 @@ body {
 .link-container {
   display: flex;
   justify-content: space-around;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 2px black solid;
+  text-decoration: none;
 }
 
 .link-tab {
@@ -31,4 +36,19 @@ body {
   max-width: 90%;
   max-height: 90%;
   border: 2px solid black;
+}
+
+.pageContainer {
+  padding-left: 5%;
+  padding-right: 5%;
+  margin: 0;
+  width: 100%;
+}
+
+.link-text-holder {
+  margin-top: 30px;
+}
+
+.link-text-holder p {
+  color: white;
 }/*# sourceMappingURL=mystyle.css.map */

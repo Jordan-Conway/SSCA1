@@ -16,21 +16,30 @@
     
   <?php include 'includes/header.php' ?>
 
-<main class="container">
+<main class="pageContainer">
   <div class="starter-template text-center">
     <div class="link-container">
-      <div class="link-tab">
-        <img class="link-image" src="images\products.jpg" alt="products"></img>
-        <a href="products.php">Products</a>
-      </div>
-      <div class="link-tab">
-        <img class="link-image" src="images\products.jpg" alt="products"></img>
-        <a href="page-2.php"></a>
-      </div>
-      <div class="link-tab">
-        <img class="link-image" src="images\questionMark.jpg" alt="products"></img>
-        <a href="about.php">About</a>
-      </div>
+
+      <a href="products.php">
+        <div class="link-tab">
+          <img class="link-image" src="images\products.jpg" alt="products"></img>
+          <div class="link-text-holder">
+            <p>Products<p>
+          </div>
+        </div>
+      </a>
+      <a href="about.php">
+        <div class="link-tab">
+          <img class="link-image" src="images\questionMark.jpg" alt="products"></img>
+          <div class="link-text-holder">
+            <p>About</p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div>
+      <h2>New Products</h2>
+      <?php include 'includes/newProducts.php' ?>
     </div>
   </div>
 
