@@ -1,3 +1,2 @@
-<body class="footer">
-
+<body >
 </body>
