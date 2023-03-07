@@ -1,7 +1,13 @@
 <?php
   require_once('db.php');
+  $catagory = $_GET['type'];
+  $filter = null;
+  if($catagory != null){
+    $filter = "WHERE productCatagory = '$catagory';";
+  }
 
-  $query = 'SELECT * FROM `products`';
+
+  $query = "SELECT * FROM `products` $filter";
   $statement = $db->prepare($query);
   $statement->execute();
   $products = $statement->fetchAll();
@@ -30,24 +36,26 @@
   <div class="starter-template text-center">
     <table id="products-table" class="table table-bordered table-striped">
       <thead>
-        <th scope="col">Product Id</th>
+        <th scope="col"></th>
         <th scope="col">Product Name</th>
-        <th scope="col">Unit Price</th>
+        <th scope="col">Price</th>
         <th scope="col">Catagory</th>
         <th scope="col">Number in Stock</th>
       </thead>
       <tbody class="table-group-divider">
         <?php
+          $productCount = 1;
           foreach($products as $product){
             echo '
               <tr>
-                <th scope="row">'. $product['productId'] .'</td>
+                <td scope="col">'. $productCount .'</td>
                 <td scope="col">'. $product['productName'] .'</td>
                 <td scope="col"> €'. $product['productPrice'] .'</td>
                 <td scope="col">'. $product['productCatagory'] .'</td>
                 <td scope="col">'. $product['noInStock'] .'</td>
               </tr>   
             ';
+            $productCount++;
           }
         ?>
       </tbody>
