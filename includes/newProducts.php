@@ -1,7 +1,7 @@
 <?php
   require_once('db.php');
 
-  $query = 'SELECT * FROM `products` WHERE dateAdded = (SELECT MAX(dateAdded) FROM `products`) LIMIT 5';
+  $query = 'SELECT * FROM `products` ORDER BY dateAdded DESC LIMIT 5';
   $statement = $db->prepare($query);
   $statement->execute();
   $products = $statement->fetchAll();
