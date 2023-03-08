@@ -2,11 +2,10 @@
 
 $errors = '';
 $myemail = 'D00244954@student.dkit.ie';// <-----Put your DkIT email address here.
-if(empty($_POST['name'])  ||
+if(empty($_POST['firstName'])  ||
+   empty($_POST['lastName']) ||
    empty($_POST['email']) ||
-   empty($_POST['phone']) ||
    empty($_POST['date']) ||
-   empty($_POST['reservationNumber']) ||
    empty($_POST['message']))
 {
     $errors .= "\n Error: all fields are required";
@@ -18,7 +17,7 @@ $headers .= 'From: '.$myemail."\r\n".
     'X-Mailer: PHP/' . phpversion();
 
 
-$name = $_POST['name'];
+$name = $_POST['firstName'] . " " . $_POST['lastName'];
 $email_address = $_POST['email'];
 $phone_number = $_POST['phone'];
 $date = $_POST['date'];
@@ -37,11 +36,11 @@ if( empty($errors))
         $to = $myemail;
         $email_subject = "Contact form submission: $name";
         $email_body = "You have received a new message. ".
-        " Here are the details:\n Name: $name \n Email: $email_address \n Phone: $phone_number \n Date: $date \n Reservation Number: $resNum \n Message \n $message";
+        " Here are the details:\n Name: $name \n Email: $email_address \n Phone: $phone_number \n Date: $date \n Message \n $message";
 
         mail($to,$email_subject,$email_body,$headers);
         //redirect to the 'thank you' page
-        header('Location: thank-you.html');
+        header('Location: thank-you.php');
 }
 ?>
 <!DOCTYPE HTML>

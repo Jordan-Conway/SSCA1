@@ -1,6 +1,7 @@
 const emailRegex =  /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
 
-let nameError = true
+let firstNameError = true
+let lastNameError = true;
 let emailError = true
 let dateError = true
 let messageError = true
@@ -11,7 +12,7 @@ window.onload = () =>{
 }
 
 function canSubmit(){
-    if(nameError || emailError || dateError || messageError){
+    if(firstNameError || lastNameError || emailError || dateError || messageError){
         disableSubmit()
     }
     else{
@@ -19,18 +20,34 @@ function canSubmit(){
     }
 }
 
-function validateName()
+function validateFirstName()
 {
-    let name = document.getElementById("name").value
+    let name = document.getElementById("firstName").value
     if(name === "")
     {
-        document.getElementById("nameError").innerText = "Name must not be blank"
-        nameError = true
+        document.getElementById("firstNameError").innerText = "First name must not be blank"
+        firstNameError = true
     }
     else
     {
-        document.getElementById("nameError").innerText = ""
-        nameError = false
+        document.getElementById("firstNameError").innerText = ""
+        firstNameError = false
+    }
+    canSubmit()
+}
+
+function validateLastName()
+{
+    let name = document.getElementById("lastName").value
+    if(name === "")
+    {
+        document.getElementById("lastNameError").innerText = "Last name must not be blank"
+        lastNameError = true
+    }
+    else
+    {
+        document.getElementById("lastNameError").innerText = ""
+        lastNameError = false
     }
     canSubmit()
 }

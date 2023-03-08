@@ -23,9 +23,13 @@
 		<p>Enter your details here and we'll try to get back to you promptly</p>
 
 		<form method="POST" name="contactform" action="contact-form-handler.php" class="mb-3"> 
-			<label for='name' class="form-label">Your Name:</label> <br>
-			<input type="text" name="name" class="form-control" id="name" onBlur="validateName()"> <br>
-			<p class="error" id="nameError"></p>
+			<label for='firstName' class="form-label">First Name:</label> <br>
+			<input type="text" name="firstName" class="form-control" id="firstName" onBlur="validateFirstName()"> <br>
+			<p class="error" id="firstNameError"></p>
+
+			<label for='lastName' class="form-label">Last Name:</label> <br>
+			<input type="text" name="lastName" class="form-control" id="lastName" onBlur="validateLastName()"> <br>
+			<p class="error" id="lastNameError"></p>
 
 			<label for='email' class="form-label">Email Address:</label> <br>
 			<input type="text" name="email" class="form-control" id="email" onBlur="validateEmail()"> <br>
@@ -42,8 +46,11 @@
 			<textarea name="message" id="message" class="form-control" onBlur="validateMessage()"></textarea>
 			<p class="error" id="messageError"></p>
 
-			<input type="submit" value="Submit" id="contact-form-submit"><br>
+			<input class="btn btn-success" type="submit" value="Submit" id="contact-form-submit"><br>
 		</form>
+		<a href="index.php" class="btn btn-secondary">
+          Return
+    </a>
 	</div>
 	<div class="col-sm">
 	</div>
