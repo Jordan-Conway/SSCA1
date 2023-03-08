@@ -15,4 +15,6 @@ INSERT INTO `products` (`productName`, `productPrice`, `productCatagory`, `noInS
 ("Urabrask the Hidden", 1.20, "Single", 3, NOW()),
 ("Doubling Season", 63.50, "Single", 1, NOW()),
 ("100 Top Loaders", 1.50, "Misc", 24, NOW()),
-("Dominaria Remastered Draft Booster Box", 159.99, "Booster Box", 4, NOW());
+("Dominaria Remastered Draft Booster Box", 159.99, "Booster Box", 4, NOW()),
+("60x Dragon Shield Might Matte Dual Sleeves", 8.99, "Sleeve", 32, NOW()),
+("Shining Fates Elite Trainer Box", 49.99, "Booster Box", 3, NOW());
