@@ -13,8 +13,10 @@
     <link href="css/mystyle.css" rel="stylesheet">
   </head>
   <body>
+  <?php include 'includes/header.php' ?>
   <main>
   <div class="starter-template text-center">
+    <h2 class="title">Select a catagory</h2>
     <div class="link-container">
     <a href="products.php?type=All">
         <div class="link-tab">
@@ -57,6 +59,9 @@
         </div>
       </a>
     </div>
+    <a href="index.php" class="mt-3 btn btn-secondary">
+          Return
+    </a>
 </div>  
   </main><!-- /.container -->
     <script src="js/bootstrap.bundle.min.js"></script>

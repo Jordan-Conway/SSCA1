@@ -1,13 +1,13 @@
 <?php
   require_once('db.php');
-  $catagory = $_GET['type'];
+  $catagory = $_GET['type'] ?? null;
   $filter = null;
-  if($catagory != "All"){
-    $filter = "WHERE productCatagory = '$catagory';";
+  if($catagory != "All" && $catagory != null){
+    $filter = "WHERE productCatagory = '$catagory' ";
   }
 
 
-  $query = "SELECT * FROM `products` $filter";
+  $query = "SELECT * FROM `products` $filter ORDER BY productName;";
   $statement = $db->prepare($query);
   $statement->execute();
   $products = $statement->fetchAll();
@@ -34,7 +34,7 @@
 
 <main class="container">
   <div class="starter-template text-center">
-    <h2><?php
+    <h2 class="title"><?php
       $title;
       switch($catagory){
         case "All": $title = "All"; break;
@@ -42,6 +42,7 @@
         case "Single": $title = "Singles"; break;
         case "Sleeve": $title = "Sleeves"; break;
         case "Misc": $title = "Miscellaneous"; break;
+        default: $title = "All";break;
       } 
       echo $title 
     ?></h2>
@@ -71,6 +72,9 @@
         ?>
       </tbody>
     </table>
+    <a href="product-select.php" class="btn btn-secondary">
+          Return
+    </a>
   </div>
 
 </main><!-- /.container -->
