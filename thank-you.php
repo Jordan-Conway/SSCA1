@@ -23,8 +23,11 @@ label,a,body
 
 <body>
 <h1>Thank you!</h1>
-Thank you for submitting the form. We will contact you soon!
-
-
+Thank you for submitting the form. We will contact you soon! <br>
+You will be redirected in 5 seconds
+<?php
+	header("Refresh: 5; URL=https://mysql07.comp.dkit.ie/D00244954/cardShop/index.php"); 
+	exit();
+?>
 </body>
 </html>
