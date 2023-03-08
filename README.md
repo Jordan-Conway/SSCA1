@@ -1,5 +1,5 @@
 # Crazy Cards
 
--SQL
--Javascript
--PHP
+-SQL  
+-Javascript  
+-PHP  
