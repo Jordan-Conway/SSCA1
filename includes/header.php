@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#131360" aria-label="Eighth navbar example">
       <div class="container">
-        <a class="navbar-brand" href="index.php">Site Title</a>
+        <a class="navbar-brand" href="index.php">Crazy Cards</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -15,9 +15,6 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="products.php">Products</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="page-2.php">Page 2</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="about.php">About</a>
