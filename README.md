@@ -1,3 +1,5 @@
-# cardShop
+# Crazy Cards
 
-A college php project that is going to have a database
+-SQL
+-Javascript
+-PHP
