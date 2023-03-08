@@ -30,9 +30,17 @@
       </a>
       <a href="about.php">
         <div class="link-tab">
-          <img class="link-image" src="images\questionMark.jpg" alt="products"></img>
+          <img class="link-image" src="images\questionMark.jpg" alt="about"></img>
           <div class="link-text-holder">
             <p>About</p>
+          </div>
+        </div>
+      </a>
+      <a href="contact.php">
+        <div class="link-tab">
+          <img class="link-image" src="images\email.jpg" alt="contact"></img>
+          <div class="link-text-holder">
+            <p>Contact Us</p>
           </div>
         </div>
       </a>
