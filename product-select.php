@@ -16,7 +16,7 @@
   <main>
   <div class="starter-template text-center">
     <div class="link-container">
-    <a href="products.php">
+    <a href="products.php?type=All">
         <div class="link-tab">
           <img class="link-image" src="images\products.jpg" alt="products"></img>
           <div class="link-text-holder">
@@ -40,7 +40,7 @@
           </div>
         </div>
       </a>
-      <a href="products.php?type=Sleeves">
+      <a href="products.php?type=Sleeve">
         <div class="link-tab">
           <img class="link-image" src="images\sleeves.png" alt="products"></img>
           <div class="link-text-holder">

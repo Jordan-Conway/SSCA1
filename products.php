@@ -2,7 +2,7 @@
   require_once('db.php');
   $catagory = $_GET['type'];
   $filter = null;
-  if($catagory != null){
+  if($catagory != "All"){
     $filter = "WHERE productCatagory = '$catagory';";
   }
 
@@ -34,6 +34,17 @@
 
 <main class="container">
   <div class="starter-template text-center">
+    <h2><?php
+      $title;
+      switch($catagory){
+        case "All": $title = "All"; break;
+        case "Booster Box": $title = "Booster Boxes"; break;
+        case "Single": $title = "Singles"; break;
+        case "Sleeve": $title = "Sleeves"; break;
+        case "Misc": $title = "Miscellaneous"; break;
+      } 
+      echo $title 
+    ?></h2>
     <table id="products-table" class="table table-bordered table-striped">
       <thead>
         <th scope="col"></th>
