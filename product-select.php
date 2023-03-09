@@ -18,14 +18,6 @@
   <div class="starter-template text-center">
     <h2 class="title">Select a catagory</h2>
     <div class="link-container">
-    <a href="products.php?type=All">
-        <div class="link-tab">
-          <img class="link-image" src="images\products.jpg" alt="products"></img>
-          <div class="link-text-holder">
-            <p>All<p>
-          </div>
-        </div>
-      </a>
       <a href="products.php?type=Booster Box">
         <div class="link-tab">
           <img class="link-image" src="images\products.jpg" alt="products"></img>

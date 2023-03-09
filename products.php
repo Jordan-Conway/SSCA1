@@ -2,7 +2,7 @@
   require_once('db.php');
   $catagory = $_GET['type'] ?? null;
   $filter = null;
-  if($catagory != "All" && $catagory != null){
+  if($catagory != null){
     $filter = "WHERE productCatagory = '$catagory' ";
   }
 
