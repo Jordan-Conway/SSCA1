@@ -22,7 +22,7 @@
 
       <a href="product-select.php">
         <div class="link-tab">
-          <img class="link-image" src="images\products.jpg" alt="products"></img>
+          <img class="link-image" src="images\big3.jpg" alt="products"></img>
           <div class="link-text-holder">
             <p>Products<p>
           </div>
