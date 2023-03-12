@@ -1,5 +1,5 @@
--- START TRANSACTION;
--- SET autocommit = OFF;
+START TRANSACTION;
+SET autocommit = OFF;
 
 DROP TABLE IF EXISTS `sleeves/sizes`;
 DROP TABLE IF EXISTS `products`;
@@ -46,5 +46,5 @@ INSERT INTO `sleeveTypes` (`sleeveSizeName`, `width`, `height`) VALUES
 INSERT INTO `sleeves/sizes` (`productId`, `sleeveTypeId`) VALUES
 ((SELECT `productId` FROM `products` WHERE `productName` = "60x Dragon Shield Might Matte Dual Sleeves"), (SELECT `sleeveTypeId` FROM `sleeveTypes` WHERE `sleeveSizeName` = "Japanese"));
 
--- SET autocommit = ON;
--- COMMIT;
+SET autocommit = ON;
+COMMIT;
