@@ -53,4 +53,13 @@ body {
 
 .link-text-holder p {
   color: white;
+}
+
+.tournament {
+  max-width: 50%;
+  margin-left: 25%;
+}
+
+.tournament li {
+  text-align: left;
 }/*# sourceMappingURL=mystyle.css.map */

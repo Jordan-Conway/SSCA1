@@ -1,3 +1,11 @@
+<?php 
+  $yugiohTime = new DateTime();
+  $magicTime = new DateTime();
+  $magicTime->modify('next friday');
+  $pokemonTime = new DateTime();
+  $pokemonTime->modify('next saturday');
+?>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -19,7 +27,8 @@
 <main class="container">
   <div class="starter-template text-center">
     <h1>About</h1>
-    <p class="lead">This is the about page</p>
+    <p class="lead">Founded in 2003, we specialize in selling products related to trading card games.</p>
+    <?php include 'includes/tournaments.php' ?>
   </div>
 
 </main><!-- /.container -->
