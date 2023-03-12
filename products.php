@@ -18,12 +18,12 @@
 
 <main class="container">
   <div class="starter-template text-center">
-    <?php 
+    <?php
       if($_GET['type'] == "Sleeve"){
-        include 'includes/sleevesTable.php';
+        include './includes/sleevesTable.php';
       }
       else{
-        include 'includes/productsTable.php'; 
+        include './includes/productsTable.php'; 
       }
     ?>
     <a href="product-select.php" class="btn btn-secondary">

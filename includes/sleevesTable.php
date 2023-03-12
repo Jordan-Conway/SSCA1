@@ -2,7 +2,7 @@
   require_once('db.php');
   $catagory = $_GET['type'] ?? null;
 
-  $query = "SELECT * FROM `products` p, `sleeves/sizes` ss, `sleevetypes` st WHERE p.productId = ss.productId AND ss.sleeveTypeId = st.sleeveTypeId;";
+  $query = "SELECT * FROM `products` p, `sleeves/sizes` ss, `sleeveTypes` st WHERE p.productId = ss.productId AND ss.sleeveTypeId = st.sleeveTypeId;";
   $statement = $db->prepare($query);
   $statement->execute();
   $products = $statement->fetchAll();
